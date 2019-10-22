@@ -28,7 +28,7 @@ class CashRegister
       @to_take_off =  @discount/100.0
       @to_take_off *= @total
       @total -= @to_take_off
-      binding.pry
+      @total = (@total).floor
       return "After the discount, the total comes to $#{total}."
     else
       return "There is no discount to apply."
