@@ -28,6 +28,7 @@ class CashRegister
       @to_take_off =  @discount/100.0
       @to_take_off *= @total
       @total -= @to_take_off
+      @total.to_f
       return "After the discount, the total comes to $#{total.to_f}."
     else
       return "There is no discount to apply."
